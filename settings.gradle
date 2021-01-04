@@ -1,0 +1,1 @@
+include ':app', ':bcnavxe-domain', ':bcnavxe-data', ':bcnavxe-api'

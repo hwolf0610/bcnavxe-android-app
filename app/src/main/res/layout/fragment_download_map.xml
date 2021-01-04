@@ -1,0 +1,210 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crittermap.backcountrynavigator.xe.ui.home.fragment.BCDownloadMapFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:alpha=".9"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ln_left_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_close_dm_fragment"
+                    android:layout_width="@dimen/fab_icon_size_xsmall"
+                    android:layout_height="@dimen/fab_icon_size_xsmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_close_dark"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_show_info_dm"
+                    android:layout_width="@dimen/fab_icon_size_xsmall"
+                    android:layout_height="@dimen/fab_icon_size_xsmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_info"
+                    app:layout_constraintLeft_toRightOf="@id/btn_close_dm_fragment"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp"
+            app:layout_constraintLeft_toRightOf="@id/ln_left_panel"
+            app:layout_constraintRight_toLeftOf="@id/ln_right_panel"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_max_zoom"
+                style="@style/small_dark_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/change_max_zoom" />
+
+            <SeekBar
+                android:id="@+id/seekBar_max_zoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:max="20"
+                android:progress="12" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_right_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_reset_dm"
+                    android:layout_width="@dimen/fab_icon_size_xsmall"
+                    android:layout_height="@dimen/fab_icon_size_xsmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_reset"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_grid_dm"
+                    android:layout_width="@dimen/fab_icon_size_xsmall"
+                    android:layout_height="@dimen/fab_icon_size_xsmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_grid"
+                    app:layout_constraintLeft_toRightOf="@id/btn_reset_dm"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_save_dm"
+                    android:layout_width="@dimen/fab_icon_size_xsmall"
+                    android:layout_height="@dimen/fab_icon_size_xsmall"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_download"
+                    app:layout_constraintLeft_toRightOf="@id/btn_grid_dm"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_dm_ts"
+            style="@style/small_dark_text"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3 tiles selected" />
+
+        <TextView
+            android:id="@+id/tv_dm_ts_text"
+            style="@style/body_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="6dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dm_ts"
+            tools:text="250mb" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_dm_cz"
+            style="@style/small_dark_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:text="@string/c_zoom_level"
+            app:layout_constraintLeft_toRightOf="@id/tv_dm_ts"
+            app:layout_constraintRight_toLeftOf="@id/tv_dm_mz"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_dm_cz_text"
+            style="@style/body_dark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="6dp"
+            app:layout_constraintLeft_toRightOf="@id/tv_dm_ts"
+            app:layout_constraintRight_toLeftOf="@id/tv_dm_mz"
+            app:layout_constraintTop_toBottomOf="@id/tv_dm_ts"
+            tools:text="12" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_dm_mz"
+            style="@style/small_dark_text"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:text="@string/max_zoom_level"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Max zoom level" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_dm_mz_text"
+            style="@style/body_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="12"
+            app:layout_constraintLeft_toLeftOf="@id/tv_dm_mz"
+            app:layout_constraintTop_toBottomOf="@id/tv_dm_mz"
+            tools:text="16 (1:48000)" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

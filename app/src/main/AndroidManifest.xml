@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crittermap.backcountrynavigator.xe">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".BCApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsEnabled}" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.splashScreen.BCSplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bcnavxe.com"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="bcnavxe.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.BCMainActivity" />
+        <activity
+            android:name=".ui.login.BCLoginActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.register.BCSignUpActivity" />
+        <activity android:name=".ui.register.BCCreateAccountActivity" />
+        <activity android:name=".ui.register.BCCreateAccountDoneActivity" />
+        <activity
+            android:name=".ui.home.BCHomeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name=".ui.login.BCResetPasswordActivity" />
+        <activity android:name=".ui.login.BCResetPasswordDoneActivity" />
+        <activity
+            android:name=".ui.trips.BCTripsActivity"
+            android:label="@string/all_trips"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.mapSource.BCMapSourceActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ui.account.BCAccountActivity"
+            android:label="@string/account"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.account.BCBasicInformationActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.account.BCChangePasswordActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.account.BCMembershipActivity"
+            android:label="Membership"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.account.BCChangeEmailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.trips.BCDestinationActivity"
+            android:launchMode="singleTask" />
+
+        <service
+            android:name=".service.BCIntendService"
+            android:exported="false" />
+        <service
+            android:name=".controller.BC_DownloadService"
+            android:exported="false" />
+        <service
+            android:name=".service.membership.BCMembershipIntentService"
+            android:exported="false" />
+        <service android:name=".service.trip.BCTripIntentService" />
+        <service android:name=".service.map.BCMapIntentService" />
+        <service android:name=".controller.BC_TilesDownloadService" />
+        <service android:name=".service.trip.BCTrackingService" />
+
+        <activity
+            android:name=".ui.saveTrip.BCSaveTripActivity"
+            android:label="@string/title_activity_save_trip"
+            android:parentActivityName=".ui.BCBaseActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crittermap.backcountrynavigator.xe.ui.BCBaseActivity" />
+        </activity>
+        <activity
+            android:name=".ui.account.BCMyWalletActivity"
+            android:label="@string/my_wallet"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.bookmark.BCBookmarkActivity"
+            android:label="@string/title_activity_bcbookmark"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".controller.utils.TrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.crittermap.backcountrynavigator.xe.TRACKING" />
+                <action android:name="com.crittermap.backcountrynavigator.xe.PAUSE" />
+                <action android:name="com.crittermap.backcountrynavigator.xe.STOP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.help.BCHelpActivity"
+            android:label="@string/title_activity_bchelp" />
+        <activity
+            android:name=".ui.selecttrip.BCSelectTripActivity"
+            android:label="@string/title_activity_select_trip"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.BCSettingsActivity"
+            android:label="@string/settings"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ui.settings.quickaccess.BCSettingsQuickAccessActivity"
+            android:label="Quick access"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.BCSettingsStorageActivity"
+            android:label="Storage"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.powersaving.BCSettingsPowerSavingActivity"
+            android:label="Power saving"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.mapdownload.BCSettingsMapDownloadActivity"
+            android:label="Maps download"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.mapcontrol.BCSettingsMapControlsActivity"
+            android:label="Map controls"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.appearance.BCSettingsAppearanceActivity"
+            android:label="Appearance"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.unitformat.BCSettingsUnitFormatActivity"
+            android:label="Unit format"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.settings.backup.BCSettingsBackupActivity"
+            android:label="Backup"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/imv_stats_logo"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_moving_time" />
+
+    <TextView
+        android:id="@+id/tv_stats_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/imv_stats_logo"
+        app:layout_constraintTop_toTopOf="@id/imv_stats_logo"
+        tools:text="3.4 km/h" />
+</android.support.constraint.ConstraintLayout>

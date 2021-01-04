@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/settingCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_vertical_margin"
+            android:text="@string/txt_backup" />
+
+        <android.support.v7.widget.SwitchCompat
+            style="@style/body_dark"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/switch_compat_height"
+            android:text="@string/txt_auto_backup" />
+
+        <Button
+            style="@style/RobotoButtonStyle.GreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/edit_text_vertical_margin"
+            android:text="@string/btn_backup_now" />
+
+        <TextView
+            style="@style/settingCaption.backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_last_backup_time" />
+
+        <TextView
+            style="@style/body_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/switch_compat_height"
+            android:gravity="center_vertical"
+            android:text="@string/txt_backup_options" />
+
+        <LinearLayout
+            android:id="@+id/ll_backup_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/settingCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/txt_restore" />
+
+        <TextView
+            style="@style/textButton"
+            android:layout_width="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_reset_active"
+            android:text="@string/txt_restore_data" />
+
+    </LinearLayout>
+</ScrollView>

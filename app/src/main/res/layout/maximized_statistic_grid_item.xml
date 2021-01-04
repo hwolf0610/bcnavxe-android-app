@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/imv_stats_logo"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_moving_time" />
+
+        <TextView
+            android:id="@+id/tv_stats_title"
+            style="@style/caption_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintLeft_toRightOf="@id/imv_stats_logo"
+            app:layout_constraintTop_toTopOf="@id/imv_stats_logo"
+            tools:text="SPEED" />
+
+        <TextView
+            android:id="@+id/tv_stats_content"
+            style="@style/titleBigDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/imv_stats_logo"
+            app:layout_constraintTop_toBottomOf="@id/imv_stats_logo"
+            tools:text="3.4 km/h" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

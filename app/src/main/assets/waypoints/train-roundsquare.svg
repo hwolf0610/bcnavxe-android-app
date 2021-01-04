@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="30px" version="1.1" viewBox="0 0 30 30" width="30px"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Element/icon/waypoint/train-roundsquare</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g fill="none" fill-rule="evenodd" id="Element/icon/waypoint/train-roundsquare" stroke="none"
+        stroke-width="1">
+        <path
+            d="M15.5,7 C11.375,7 8,7.44736842 8,10.5789474 L8,19.0789474 C8,20.7789474 9.5,22.2105263 11.28125,22.2105263 L9.875,23.5526316 L9.875,24 L21.125,24 L21.125,23.5526316 L19.71875,22.2105263 C21.5,22.2105263 23,20.7789474 23,19.0789474 L23,10.5789474 C23,7.44736842 19.625,7 15.5,7 Z M11.5,21 C10.7,21 10,20.3 10,19.5 C10,18.7 10.7,18 11.5,18 C12.3,18 13,18.7 13,19.5 C13,20.3 12.3,21 11.5,21 Z M15,15 L10,15 L10,11 L15,11 L15,15 Z M19.5,21 C18.7,21 18,20.3 18,19.5 C18,18.7 18.7,18 19.5,18 C20.3,18 21,18.7 21,19.5 C21,20.3 20.3,21 19.5,21 Z M21,15 L16,15 L16,11 L21,11 L21,15 Z"
+            fill="#1E88E5" fill-rule="nonzero" id="Shape"></path>
+    </g>
+</svg>

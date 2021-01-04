@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVersion
+
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidCompileSdkVersion
+        versionCode androidVersionCode
+        versionName androidVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation mainDependencies.androidAppCompatV7
+    // DBFlow
+    annotationProcessor mainDependencies.dbFlowProcessor
+    implementation mainDependencies.dbFlow
+    implementation mainDependencies.dbFlowCore
+    implementation mainDependencies.dagger
+    annotationProcessor mainDependencies.daggerCompiler
+    api mainDependencies.daggerAndroidSupport
+    annotationProcessor mainDependencies.daggerAndroidProcessor
+    implementation mainDependencies.rxAndroid
+    implementation mainDependencies.rxJava
+    testImplementation testDependencies.junit
+    implementation project(':bcnavxe-api')
+}

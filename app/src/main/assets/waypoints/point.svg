@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="24px" version="1.1" viewBox="0 0 24 24" width="24px"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Element/icon/point</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter filterUnits="objectBoundingBox" height="300.0%" id="filter-1" width="150.0%"
+            x="-25.0%" y="-100.0%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" id="Element/icon/point" stroke="none" stroke-width="1">
+        <ellipse cx="12" cy="20.5" fill="#000000" filter="url(#filter-1)" id="Oval-11"
+            opacity="0.295969203" rx="6" ry="1.5"></ellipse>
+        <g id="Group" transform="translate(4.000000, 1.000000)">
+            <path
+                d="M8,0 C5.86961821,-4.05953581e-05 3.82721269,0.828949485 2.32550542,2.30321533 C0.823798158,3.77748117 -0.0131584184,5.77523722 0.000156468227,7.85365854 C0.000156468227,14.0021973 3.99731445,15.0535278 8,20 C11.9649658,15.0335693 15.9998435,13.9952393 15.9998435,7.85365854 C16.0131584,5.77523722 15.1762018,3.77748117 13.6744946,2.30321533 C12.1727873,0.828949485 10.1303818,-4.05953581e-05 8,0 Z"
+                fill="#F34213" id="Shape"></path>
+            <path d="M8,5 L8,11 M11,8 L5,8" id="Shape" stroke="#FFFFFF" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="1.5"></path>
+        </g>
+    </g>
+</svg>

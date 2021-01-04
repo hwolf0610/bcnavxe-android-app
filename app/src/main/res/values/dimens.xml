@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="edit_text_vertical_margin">8dp</dimen>
+    <dimen name="text_space_margin">4dp</dimen>
+
+    <dimen name="activity_margin">32dp</dimen>
+
+    <dimen name="margin_06">6dp</dimen>
+    <dimen name="margin_08">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="margin_64">64dp</dimen>
+    <dimen name="margin_96">96dp</dimen>
+
+    <dimen name="button_width">290dp</dimen>
+    <dimen name="button_width_half">140dp</dimen>
+    <dimen name="button_font_size">16sp</dimen>
+    <dimen name="button_width_normal">80dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_36">36sp</dimen>
+
+    <dimen name="color_picker">36dp</dimen>
+    <dimen name="edit_text_height">48dp</dimen>
+    <dimen name="container_height">56dp</dimen>
+    <dimen name="minus_margin_24">-24dp</dimen>
+    <dimen name="activity_vertical_margin_minus">-16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="child_menu_item_margin">57dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_icon_size">48dp</dimen>
+    <dimen name="fab_icon_size_small">36dp</dimen>
+    <dimen name="fab_icon_size_xsmall">24dp</dimen>
+    <dimen name="search_view_elevation">4dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+    <dimen name="tutorial_image_column">72dp</dimen>
+    <dimen name="switch_compat_height">48dp</dimen>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="false"
+    android:focusable="true"
+    tools:context=".ui.home.fragment.compass.CompassFragment">
+
+    <FrameLayout
+        android:id="@+id/compass_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_64"
+        android:layout_marginEnd="@dimen/margin_64"
+        android:layout_centerInParent="true">
+
+        <com.crittermap.backcountrynavigator.xe.share.SquareImageView
+            android:id="@+id/compass_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_compass1_face"
+            tools:ignore="ContentDescription" />
+
+        <com.crittermap.backcountrynavigator.xe.share.SquareImageView
+            android:id="@+id/compass_red_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_compass1_red_arrow"
+            tools:ignore="ContentDescription" />
+
+        <com.crittermap.backcountrynavigator.xe.share.SquareImageView
+            android:id="@+id/compass_needle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_compass1_needle"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+</RelativeLayout>

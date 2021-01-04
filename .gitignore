@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.idea/
+app/release/
+.project
+.settings/
+app/.classpath
+bcnavxe-api/.classpath
+bcnavxe-data/.classpath
+bcnavxe-domain/.classpath

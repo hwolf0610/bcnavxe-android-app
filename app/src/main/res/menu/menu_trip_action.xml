@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_trip_action_unpin"
+        android:icon="@drawable/ic_unpin"
+        android:orderInCategory="99"
+        android:title="@string/menu_item_unpin" />
+    <item
+        android:id="@+id/item_trip_action_pin"
+        android:icon="@drawable/ic_pin"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_pin" />
+    <item
+        android:id="@+id/item_trip_action_edit"
+        android:icon="@drawable/ic_edit"
+        android:orderInCategory="101"
+        android:title="@string/menu_item_edit" />
+    <item
+        android:id="@+id/item_trip_action_upload"
+        android:icon="@drawable/ic_upload"
+        android:orderInCategory="102"
+        android:title="@string/item_trip_action_upload" />
+
+    <item
+        android:id="@+id/item_trip_action_download"
+        android:icon="@drawable/ic_download"
+        android:orderInCategory="103"
+        android:title="@string/menu_item_download" />
+
+    <item
+        android:id="@+id/item_trip_action_sync"
+        android:icon="@drawable/ic_sync"
+        android:orderInCategory="104"
+        android:title="@string/item_trip_action_sync" />
+
+    <item
+        android:id="@+id/item_trip_action_delete"
+        android:icon="@drawable/ic_trash"
+        android:orderInCategory="105"
+        android:title="@string/item_trip_action_delete" />
+
+
+</menu>

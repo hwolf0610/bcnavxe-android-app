@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+  <ImageView
+      android:src="@drawable/ic_plan"
+      android:id="@+id/list_item_icon"
+      android:layout_width="25dp"
+      android:layout_height="match_parent"
+      android:foregroundGravity="center_vertical"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:layout_marginStart="@dimen/activity_horizontal_margin"
+      />
+
+  <TextView
+      android:layout_toRightOf="@+id/list_item_icon"
+      android:layout_toEndOf="@+id/list_item_icon"
+      android:id="@+id/list_item_name"
+      android:layout_width="match_parent"
+      android:layout_alignBaseline="@+id/list_item_icon"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/activity_horizontal_margin"
+      android:layout_marginStart="@dimen/activity_horizontal_margin"
+      android:gravity="center_vertical"
+      tools:text="Title"
+      />
+
+  <ImageView
+      android:id="@+id/list_item_arrow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:visibility="invisible"
+      />
+
+  <Switch
+      android:id="@+id/list_item_switch"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      android:gravity="center_vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:visibility="invisible"/>
+
+</RelativeLayout>

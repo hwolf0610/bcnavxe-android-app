@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_pressed="false" android:state_selected="false">
+    <shape android:shape="rectangle">
+      <solid
+          android:color="@color/facebookButton"/>
+      <stroke
+          android:width="1dp"
+          android:color="@color/facebookButton"/>
+      <corners android:radius="8dp"/>
+    </shape>
+  </item>
+  <item android:state_pressed="false" android:state_selected="true">
+    <shape android:shape="rectangle">
+      <solid android:color="@color/facebookButton"/>
+      <stroke
+          android:width="1dp"
+          android:color="@color/facebookButton"/>
+      <corners android:radius="8dp"/>
+    </shape>
+  </item>
+  <item android:state_pressed="true">
+    <shape android:shape="rectangle">
+      <solid android:color="@color/facebookButtonPressed"/>
+      <stroke
+          android:width="1dp"
+          android:color="@color/facebookButtonPressed"/>
+      <corners android:radius="8dp"/>
+    </shape>
+  </item>
+</selector>

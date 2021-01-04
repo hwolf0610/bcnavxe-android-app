@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "159832539945",
+    "firebase_url": "https://backcountry-navi-1516649812030.firebaseio.com",
+    "project_id": "backcountry-navi-1516649812030",
+    "storage_bucket": "backcountry-navi-1516649812030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159832539945:android:f2c66d214385e61c",
+        "android_client_info": {
+          "package_name": "com.crittermap.backcountrynavigator.xe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159832539945-21fkqh8ldl9fmopgpov1sj189aosk0i0.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "159832539945-n8cd86qgb7lsuhnc6nebp76850j98ou1.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "159832539945-socqkisdv5t2hnbt0kmh9ke1k146t5lo.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "159832539945-moii1tpchfoel9u9kvuo011ka57mpnag.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "159832539945-21fkqh8ldl9fmopgpov1sj189aosk0i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT7lXVpidGmlYNS10QBO9wIFOjOxn0Wn0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        app:errorEnabled="true"
+        app:layout_goneMarginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_folder_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minWidth="170dp"
+            android:textSize="@dimen/font_size_15" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="@string/btn_cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_15"
+        app:layout_constraintEnd_toStartOf="@+id/btn_create"
+        app:layout_constraintTop_toBottomOf="@id/til_folder" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="@string/btn_create"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_15"
+        app:layout_constraintEnd_toEndOf="@id/til_folder"
+        app:layout_constraintTop_toBottomOf="@id/til_folder" />
+</android.support.constraint.ConstraintLayout>

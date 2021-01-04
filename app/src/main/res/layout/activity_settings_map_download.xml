@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        style="@style/settingCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_text_vertical_margin"
+        android:text="@string/txt_syncing" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_enable_auto_resume"
+        style="@style/body_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/switch_compat_height"
+        android:text="@string/txt_resume_download" />
+
+    <TextView
+        style="@style/settingCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_integrity"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/btn_check_integrity"
+        style="@style/RobotoButtonStyle.GreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/btn_check_integrity" />
+
+    <TextView
+        android:id="@+id/tv_last_checking_time"
+        style="@style/settingCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/txt_last_checking_time"
+        android:textSize="@dimen/font_size_14" />
+
+</LinearLayout>

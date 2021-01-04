@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/imv_geometry"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_folder_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_geometry_name"
+        style="@style/body_dark"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imv_geometry"
+        app:layout_constraintEnd_toStartOf="@id/btn_edit"
+        app:layout_constraintStart_toEndOf="@+id/imv_geometry"
+        app:layout_constraintTop_toTopOf="@+id/imv_geometry"
+        tools:text="Gas Station" />
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_trash_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_geometry_name" />
+
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_edit_dark"
+        app:layout_constraintEnd_toStartOf="@+id/btn_delete"
+        app:layout_constraintTop_toTopOf="@+id/tv_geometry_name" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imv_geometry"
+        tools:text="54.840698, 84.888128" />
+
+    <TextView
+        android:id="@+id/lb_trip"
+        style="@style/caption_dark"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+    <TextView
+        android:id="@+id/tv_trip"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        app:layout_constraintLeft_toRightOf="@id/lb_trip"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_trip"
+        tools:text="Ta Nang" />
+
+    <TextView
+        android:id="@+id/lb_length"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Length"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_trip" />
+
+    <TextView
+        android:id="@+id/tv_length"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/lb_length"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_length"
+        tools:text="10km" />
+
+    <TextView
+        android:id="@+id/lb_area"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Area"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_length" />
+
+    <TextView
+        android:id="@+id/tv_area"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/lb_area"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_area"
+        tools:text="10km" />
+
+    <TextView
+        android:id="@+id/lb_perimeter"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Perimeter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_area" />
+
+    <TextView
+        android:id="@+id/tv_perimeter"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/lb_perimeter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_perimeter"
+        tools:text="10km" />
+
+    <TextView
+        android:id="@+id/lb_points"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Points"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_perimeter" />
+
+    <TextView
+        android:id="@+id/tv_points"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/lb_points"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_points"
+        tools:text="10km" />
+
+    <TextView
+        android:id="@+id/lb_attitude"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Attitude"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_points" />
+
+    <TextView
+        android:id="@+id/tv_attitude"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/lb_attitude"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_attitude"
+        tools:text="10km" />
+
+    <TextView
+        android:id="@+id/lb_note"
+        style="@style/caption_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Note"
+        app:layout_constraintEnd_toEndOf="@id/lb_trip"
+        app:layout_constraintStart_toStartOf="@id/imv_geometry"
+        app:layout_constraintTop_toBottomOf="@id/lb_attitude" />
+
+    <TextView
+        android:id="@+id/tv_note"
+        style="@style/caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="5"
+        app:layout_constraintLeft_toRightOf="@id/lb_note"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/lb_note"
+        tools:text="ABC \n xxx" />
+</android.support.constraint.ConstraintLayout>

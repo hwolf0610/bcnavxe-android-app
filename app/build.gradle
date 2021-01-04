@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion androidBuildToolsVersion
+    defaultConfig {
+        applicationId androidApplicationId
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidCompileSdkVersion
+        versionCode androidVersionCode
+        versionName androidVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsEnabled: true]
+        }
+        debug {
+            manifestPlaceholders = [crashlyticsEnabled: false]
+        }
+    }
+    configurations.all {
+        resolutionStrategy.force mainDependencies.androidAnnotations
+    }
+}
+
+dependencies {
+    api project(':bcnavxe-data')
+    api project(':bcnavxe-domain')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation mainDependencies.androidAppCompatV7
+    implementation mainDependencies.androidDesign
+    implementation mainDependencies.androidSupportV4
+    implementation mainDependencies.androidCardView
+    implementation mainDependencies.androidRecyclerView
+    implementation mainDependencies.archLifecycleRuntime
+    implementation mainDependencies.archLifecycleViewModel
+    implementation mainDependencies.archLifecycleExtensions
+    implementation mainDependencies.androidContrainsLayout
+    implementation mainDependencies.okHttp
+    // Google play service
+    implementation mainDependencies.googlePlayServicePlus
+    implementation mainDependencies.googlePlayServiceAuth
+    implementation mainDependencies.googlePlayServiceLocation
+    implementation mainDependencies.crashlytics
+    implementation mainDependencies.multiDex
+    // Butter Knife
+    implementation mainDependencies.butterKnife
+    implementation mainDependencies.androidSupportV4
+    annotationProcessor mainDependencies.butterKnifeProcessor
+    // Retrofit
+    implementation mainDependencies.retrofit
+    implementation mainDependencies.retrofitConverterGson
+    implementation mainDependencies.okHttp
+    implementation mainDependencies.okHttpUrlConnection
+    // Event bus
+    implementation mainDependencies.eventBus
+    // Arcgis
+    implementation mainDependencies.arcGis
+    // Glide
+    implementation(mainDependencies.glide) {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor mainDependencies.glideProcessor
+    // DBFlow
+    annotationProcessor mainDependencies.dbFlowProcessor
+    implementation mainDependencies.dbFlow
+    implementation mainDependencies.dbFlowCore
+    // Expandable RecyclerView
+    implementation mainDependencies.expandableRecyclerView
+    // Android SVG
+    implementation mainDependencies.androidSvg
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'com.google.guava:guava:25.1-android'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.facebook.android:facebook-android-sdk:4.37.0'
+    implementation mainDependencies.dagger
+    annotationProcessor mainDependencies.daggerCompiler
+    api mainDependencies.daggerAndroidSupport
+    annotationProcessor mainDependencies.daggerAndroidProcessor
+    implementation mainDependencies.rxAndroid
+    implementation mainDependencies.rxJava
+    testImplementation testDependencies.junit
+}
+
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'

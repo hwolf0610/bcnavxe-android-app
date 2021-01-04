@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="20dp">
+
+    <Button
+        android:id="@+id/btn_clear"
+        style="@style/RobotoButtonStyle.GreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/edit_text_vertical_margin"
+        android:text="@string/txt_clear" />
+
+    <TextView
+        android:id="@+id/tv_data_name"
+        style="@style/body_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/btn_clear"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/tv_data_size"
+        style="@style/body_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_data_name"
+        android:layout_marginTop="@dimen/edit_text_vertical_margin"
+        android:layout_toStartOf="@id/btn_clear"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+</RelativeLayout>

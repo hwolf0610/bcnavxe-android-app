@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: "com.github.ben-manes.versions"
+buildscript {
+    ext.kotlin_version = '1.2.61'
+
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.google.gms:google-services:4.0.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'io.fabric.tools:gradle:1.25.4'
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.20.0"
+    }
+}
+
+apply from: 'buildsystem/dependencies.gradle'
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://esri.bintray.com/arcgis" }
+        maven { url "https://www.jitpack.io" }
+        maven {
+            url 'https://maven.google.com/'
+        }
+    }
+
+    ext {
+        androidApplicationId = "com.crittermap.backcountrynavigator.xe"
+        androidVersionCode = 20181019_01
+        androidVersionName = "1.2.7"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

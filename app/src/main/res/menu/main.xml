@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_load_mbtiles"
+        android:orderInCategory="100"
+        android:title="Load MBTiles Map"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_get_tiles_to_download"
+        android:orderInCategory="100"
+        android:title="Get Tiles Intersect By Square"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_get_tiles_to_download_by_trails"
+        android:orderInCategory="100"
+        android:title="Get Tiles Intersect By Trails"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_select_tiles_to_download"
+        android:orderInCategory="100"
+        android:title="Select Tiles to Download"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:title="Refresh"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0b9676</color>
+
+    <color name="colorPrimaryDark">#00624C</color>
+    <color name="colorAccent">#0b9676</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_transparent_35">#59FFFFFF</color>
+    <color name="grey">#e3e7ee</color>
+    <color name="accountBg">#f9f9f9</color>
+
+    <color name="greenButton">@color/colorPrimary</color>
+    <color name="greenButtonPressed">@color/colorPrimaryDark</color>
+    <color name="facebookButton">#405993</color>
+    <color name="facebookButtonPressed">#002b91</color>
+    <color name="googleButton">#d34836</color>
+    <color name="googleButtonPressed">#991100</color>
+    <color name="editTextBackground">#80FFFFFF</color>
+    <color name="button_disable">#82AFA5</color>
+    <color name="linear_background">#f3f3f3</color>
+
+    <color name="textColorPrimary">#4d5965</color>
+    <color name="textColor">#4d5965</color>
+    <color name="textGrey">#b34d5965</color>
+    <color name="textTab">#6673899c</color>
+    <color name="textDark">#30353e</color>
+    <color name="greenishBlue">#0b9676</color>
+    <color name="pinnedMsgColor">#333333</color>
+    <color name="textDescGrey">#73899c</color>
+
+    <color name="colorTransBg">#80000000</color>
+    <color name="side_bar">#4ea080</color>
+    <color name="lightNavigationDrawer">#33000000</color>
+    <color name="red">#e53935</color>
+
+    <color name="black_white">#000000</color>
+    <color name="white_black">#FFFFFF</color>
+    <color name="white_transparent">#FFFFFF</color>
+    <color name="black_transparent">#00000000</color>
+
+    <color name="green_black">#0b9676</color>
+    <color name="textColorPrimary_both">#4d5965</color>
+    <color name="white_transparent_50">#ffffff</color>
+</resources>

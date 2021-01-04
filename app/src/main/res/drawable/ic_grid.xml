@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M4.5,2L4.5,2A0.5,0.5 0,0 1,5 2.5L5,21.5A0.5,0.5 0,0 1,4.5 22L4.5,22A0.5,0.5 0,0 1,4 21.5L4,2.5A0.5,0.5 0,0 1,4.5 2z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M19.5,2L19.5,2A0.5,0.5 0,0 1,20 2.5L20,21.5A0.5,0.5 0,0 1,19.5 22L19.5,22A0.5,0.5 0,0 1,19 21.5L19,2.5A0.5,0.5 0,0 1,19.5 2z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M2.5,4L21.5,4A0.5,0.5 0,0 1,22 4.5L22,4.5A0.5,0.5 0,0 1,21.5 5L2.5,5A0.5,0.5 0,0 1,2 4.5L2,4.5A0.5,0.5 0,0 1,2.5 4z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M2.5,19L21.5,19A0.5,0.5 0,0 1,22 19.5L22,19.5A0.5,0.5 0,0 1,21.5 20L2.5,20A0.5,0.5 0,0 1,2 19.5L2,19.5A0.5,0.5 0,0 1,2.5 19z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M9.5,4L9.5,4A0.5,0.5 0,0 1,10 4.5L10,19.5A0.5,0.5 0,0 1,9.5 20L9.5,20A0.5,0.5 0,0 1,9 19.5L9,4.5A0.5,0.5 0,0 1,9.5 4z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M20,14.667L20,14.667A0.5,0.5 0,0 1,19.5 15.167L4.5,15.167A0.5,0.5 0,0 1,4 14.667L4,14.667A0.5,0.5 0,0 1,4.5 14.167L19.5,14.167A0.5,0.5 0,0 1,20 14.667z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M14.5,4L14.5,4A0.5,0.5 0,0 1,15 4.5L15,19.5A0.5,0.5 0,0 1,14.5 20L14.5,20A0.5,0.5 0,0 1,14 19.5L14,4.5A0.5,0.5 0,0 1,14.5 4z" />
+    <path
+        android:fillColor="#0B9676"
+        android:fillType="evenOdd"
+        android:pathData="M20,9.833L20,9.833A0.5,0.5 0,0 1,19.5 10.333L4.5,10.333A0.5,0.5 0,0 1,4 9.833L4,9.833A0.5,0.5 0,0 1,4.5 9.333L19.5,9.333A0.5,0.5 0,0 1,20 9.833z" />
+</vector>

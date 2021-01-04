@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">BCNAVXE DATA</string>
+    <!--settings-->
+    <string name="settings_quick_access_title">Quick access</string>
+    <string name="settings_quick_access_subtitle">Choose what to show on dashboard</string>
+    <string name="settings_storage_title">Storage</string>
+    <string name="settings_power_saving_title">Power saving</string>
+    <string name="settings_map_download_title">Maps download</string>
+    <string name="settings_map_download_subtitle">Auto resume, Check D/L Integrity</string>
+    <string name="settings_map_controls_title">Map controls</string>
+    <string name="settings_map_controls_subtitle"><![CDATA[Map controls & Compass]]></string>
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_appearance_subtitle">Day / Night mode</string>
+    <string name="settings_unit_format_title">Unit format</string>
+    <string name="settings_backup_title">Backup</string>
+
+    <!--Settings Quick access activity-->
+    <string name="txt_desc_quick_access">Toggle buttons you want to display on dashboard</string>
+    <string name="txt_fullscreen_mode">Fullscreen mode</string>
+    <string name="txt_scale_bar">Scale bar / number</string>
+    <string name="txt_statistic">Statistics</string>
+    <string name="txt_drawing_tools">Drawing tools</string>
+    <string name="txt_map_sources">Map sources</string>
+    <string name="txt_zoom">Zoom</string>
+    <string name="change_settings_success">Change settings success</string>
+
+    <!--Settings map download-->
+    <string name="txt_syncing">SYNCING</string>
+    <string name="txt_resume_download">Enable auto resume download</string>
+    <string name="txt_integrity">D/L Integrity</string>
+    <string name="btn_check_integrity">Check D/L Integrity</string>
+    <string name="txt_last_checking_time">Your last checking was on %s</string>
+    <string name="txt_sync_photo_cellular">Sync photos on Cellular</string>
+    <string name="txt_gps_sample">GPS SAMPLE RATE</string>
+    <string name="txt_readability">READABILITY</string>
+
+    <string name="txt_night_mode">Night mode</string>
+    <string name="txt_brightness">BRIGHTNESS</string>
+    <string name="txt_theme">THEME</string>
+    <string name="txt_dark_theme">Dark theme</string>
+    <string name="txt_light_theme">Light theme</string>
+    <string name="txt_app_data">App data</string>
+    <string name="txt_app_settings">App settings</string>
+    <string name="txt_account">Account</string>
+
+    <!--Settings - backup -->
+    <string name="txt_backup">BACKUP</string>
+    <string name="txt_auto_backup">Auto backup data</string>
+    <string name="btn_backup_now">Backup now</string>
+    <string name="txt_last_backup_time">Your last backup was on %s</string>
+    <string name="txt_backup_options">Backup options</string>
+    <string name="txt_restore">RESTORE</string>
+    <string name="txt_restore_data">RESTORE DATA</string>
+    <string name="txt_area">AREA</string>
+    <string name="txt_distance">DISTANCE</string>
+    <string name="txt_coordinates">COORDINATES</string>
+    <string name="txt_unit_hec">Hec</string>
+    <string name="txt_unit_acr">Acr</string>
+    <string name="txt_unit_miles">Miles</string>
+    <string name="txt_unit_km">Km</string>
+    <string name="txt_unit_dec">Decimal Degrees</string>
+    <string name="txt_unit_deg">Degrees and Minutes</string>
+    <string name="txt_unit_utm">UTM</string>
+    <string name="txt_unit_mgrs">MGRS</string>
+    <string name="txt_internal">Internal</string>
+    <string name="txt_sd_card">SD card</string>
+    <string name="txt_clear">Clear</string>
+    <string name="txt_rotation">ROTATION</string>
+    <string name="txt_allow_map_rotation">Allow map rotation</string>
+    <string name="txt_compass">COMPASS</string>
+    <string name="txt_compass_style_orienteering">Orienteering</string>
+    <string name="txt_grid_north">Grid North</string>
+    <string name="txt_compass_style_bearing">Bearing</string>
+    <string name="txt_unit_dms">Degree and Minutes and Second</string>
+    <string name="txt_map_arrow">Map arrow</string>
+    <string name="txt_compass_style">Compass style</string>
+    <string name="txt_magnetic_accele">Magnetic and Accelerometer</string>
+    <string name="txt_rotation_vector">Rotation Vector</string>
+    <string name="txt_magnetic_graviy">Magnetic and Gravity</string>
+    <string name="txt_orientation">Orientation</string>
+    <string name="txt_day">Day</string>
+    <string name="txt_night">Night</string>
+    <string name="txt_auto">Auto</string>
+</resources>

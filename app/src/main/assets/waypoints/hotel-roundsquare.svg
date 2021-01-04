@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="30px" version="1.1" viewBox="0 0 30 30" width="30px"
+    xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Element/icon/waypoint/hotel-roundsquare</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g fill="none" fill-rule="evenodd" id="Element/icon/waypoint/hotel-roundsquare" stroke="none"
+        stroke-width="1">
+        <path
+            d="M19.5625,8.7 L19.5625,7 L11.4375,7 L11.4375,8.7 L9,8.7 L9,24 L13.875,24 L13.875,22.3 L17.125,22.3 L17.125,24 L22,24 L22,8.7 L19.5625,8.7 Z M15,20 L13,20 L13,18 L15,18 L15,20 Z M15,17 L13,17 L13,15 L15,15 L15,17 Z M15,14 L13,14 L13,12 L15,12 L15,14 Z M18,20 L16,20 L16,18 L18,18 L18,20 Z M18,17 L16,17 L16,15 L18,15 L18,17 Z M18,14 L16,14 L16,12 L18,12 L18,14 Z"
+            fill="#6D4C41" fill-rule="nonzero" id="Shape"></path>
+    </g>
+</svg>

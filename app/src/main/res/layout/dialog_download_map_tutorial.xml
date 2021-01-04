@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginTop="@dimen/margin_56"
+    android:elevation="14dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenishBlue">
+
+        <TextView
+            android:id="@+id/fragment_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="18dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/tutorial"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="@dimen/tutorial_image_column"
+                    android:src="@drawable/ic_grid"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_draw_grid" />
+            </TableRow>
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="@dimen/tutorial_image_column"
+                    android:src="@drawable/ic_download_green"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_download" />
+            </TableRow>
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:src="@drawable/ic_reset_active"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_reset" />
+            </TableRow>
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="@dimen/tutorial_image_column"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_set_max_zoom" />
+            </TableRow>
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="@dimen/tutorial_image_column"
+                    android:src="@drawable/ic_info"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_view_again" />
+            </TableRow>
+
+            <TableRow style="@style/tutorial_row">
+
+                <ImageView
+                    android:layout_width="@dimen/tutorial_image_column"
+                    android:src="@drawable/ic_close_dark"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    style="@style/tutorial_text_view"
+                    android:text="@string/txt_tutorial_x" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp">
+
+        <CheckBox
+            android:id="@+id/checkBox_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/txt_tutorial_always_show_this"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/font_size_12"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:background="@null"
+            android:text="CLOSE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_size_14" />
+    </RelativeLayout>
+
+
+</LinearLayout>

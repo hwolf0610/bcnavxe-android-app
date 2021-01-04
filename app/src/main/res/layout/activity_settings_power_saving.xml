@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <!--TODO TBD SYNC OPTION-->
+    <TextView
+        android:id="@+id/tv_syncing"
+        style="@style/settingCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/edit_text_vertical_margin"
+        android:text="@string/txt_syncing" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_sync_photo_cellular"
+        style="@style/body_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/switch_compat_height"
+        android:layout_below="@id/tv_syncing"
+        android:visibility="gone"
+        android:text="@string/txt_sync_photo_cellular" />
+
+    <TextView
+        android:id="@+id/gps_sample_rate"
+        style="@style/settingCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_sync_photo_cellular"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_gps_sample" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/et_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gps_sample_rate">
+
+        <EditText
+            android:id="@+id/et_gps_sample_rate"
+            style="@style/body_dark"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/second"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/et_gps_sample_rate"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_save_sample_rate"
+        style="@style/RobotoButtonStyle.GreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/gps_sample_rate"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_toEndOf="@id/et_container"
+        android:text="@string/btn_save" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_full_rounded_8"
+    android:columnCount="5"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:rowCount="2" />

@@ -1,0 +1,383 @@
+<resources>
+    <string name="app_name">BackCountry Navigator XE</string>
+
+    <string name="license">runtimelite,1000,rud8488948081,none,TRB3LNBHPD0H4P7EJ008</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="skip">Skip</string>
+    <string name="sign_up_text">Start exploring today by signing up to create and track your trips</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="log_in_now">Log in now</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="term_of_service">Term of Service</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_connect_with">Or connect with</string>
+    <string name="reset_password_text">Please provide us your user name or email address. We’ll send you a link to reset your password</string>
+    <string name="reset_password_text_error">No account registered by this email.\nPlease check again.</string>
+    <string name="reset_password">Reset password</string>
+    <string name="reset_password_button">Reset Password</string>
+    <string name="done">Done</string>
+    <string name="reset_password_text_done">Check your inbox for instructions to reset password</string>
+    <string name="incorrectPassword">Incorrect Password</string>
+    <string name="incorrectPasswordText">The password you entered is incorrect. Please try again.</string>
+    <string name="tryAgain">Try Again</string>
+    <string name="emailExist">Invalid Email</string>
+    <string name="emailExistText">A user with the given username is already registered</string>
+    <string name="email_is_not_valid">Email is not valid</string>
+    <string name="username_cannot_contain_special_character">Username cannot contain special characters</string>
+    <string name="username_min_max">Username length is from 1 to 16</string>
+    <string name="password_min_max">Password length is from 6 to 50</string>
+    <string name="required_field">This field cannot be empty</string>
+    <string name="notice">Notice</string>
+    <string name="no_internet">There is no internet connection.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="press_back_to_exit">Please click BACK again to exit</string>
+    <string name="sign_up_text_done">Please check your inbox and active your account</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="loading_map">Loading map</string>
+    <string name="select_layer">Select layer</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="unknownError">Unknown Error. Please try again.</string>
+
+    <!--Controller import-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="canada_topo_map_url">http://geogratis.gc.ca/maps/CBMT?service=wms&amp;version=1.1.1&amp;request=GetMap&amp;format=image/png&amp;bgcolor=0xFFFFFF&amp;exceptions=application/vnd.ogc.se_inimage&amp;srs=EPSG:900913&amp;layers=CBMT&amp;bbox={MBBOX}&amp;width=256&amp;height=256</string>
+    <string name="canada_topo_map_name">canada_topo</string>
+    <string name="hikebikedecomplete">http://s3-us-west-1.amazonaws.com/caltopo/topo/${level}/${col}/${row}.png</string>
+    <string name="hillshades">https://maps.tilehosting.com/data/hillshades/{z}/{x}/{y}.png?key=GcKrADSQz6QkWPN2tk4s</string>
+    <string name="caltopo"> http://s3-us-west-1.amazonaws.com/caltopo/topo/${level}/${col}/${row}.png</string>
+
+    <string name="bc__tiles_download_notification_title_template">Downloading tiles: %1$s</string>
+    <string name="bc__tiles_download_notification_placeholder_text_template">Download in progress</string>
+
+    <!--Side bar menu-->
+    <string name="map">Map</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="overlays">Overlays</string>
+    <string name="shop">Shop</string>
+    <string name="account">Account</string>
+    <string name="setting">Settings</string>
+    <string name="help">Help</string>
+    <string name="plan">Plan</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="map_source">Map sources</string>
+    <string name="add_on">Add-on</string>
+    <string name="go_online">Go online</string>
+    <string name="go_offline">Go offline</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log out</string>
+
+    <!--Trips-->
+    <string name="trips">Trips</string>
+    <string name="all_trips">All trips</string>
+    <string name="txt_trip_last_modified">Last modified: %s</string>
+
+    <!--Check membership-->
+    <string name="membership_title_expired_warning">Warning</string>
+    <string name="membership_msg_expired_warning">Your membership will be expired today. Please renew it</string>
+    <string name="action_renew">Renew</string>
+    <string name="btn_ok">OK</string>
+    <string name="membership_title_downgrade">Attention</string>
+    <string name="membership_msg_downgrade">Your membership has suspended. Please update your payment to renew.</string>
+    <string name="membership_title_upgrade">Congratulation!</string>
+    <string name="membership_msg_upgrade">Your membership has upgraded to</string>
+    <string name="membership_title_required">Membership required</string>
+    <string name="membership_msg_required">Please purchase membership package.</string>
+
+    <!--Trip action-->
+    <string name="confirm_delete_trip">Are you sure to delete this trip?</string>
+
+    <!--Map action-->
+    <string name="stop_draw">Stop draw</string>
+    <string name="confirm_delete_map">Are you sure to delete "%s" map?</string>
+    <string name="update_map_name">Update map name</string>
+    <string name="menu_item_share">Share</string>
+    <string name="pin_map">Pin map</string>
+    <string name="msg_alert_pinned_map">You can only choose up to 5 maps to display on quick access on dashboard.\n\nChoose one map to replace</string>
+    <string name="delete_map">Delete Map</string>
+
+    <!--Dialog-->
+    <string name="information">Information</string>
+    <string name="warning">Warning</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="menu_item_pin">Pin to quick access</string>
+    <string name="menu_item_edit">Edit</string>
+    <string name="item_trip_action_upload">Upload to Cloud</string>
+    <string name="item_trip_action_redownload">Redownload from Cloud</string>
+    <string name="menu_item_download">Download from Cloud</string>
+    <string name="item_trip_action_delete">Delete</string>
+    <string name="item_trip_action_sync">Sync</string>
+    <string name="item_map_action_open">Open</string>
+
+    <!--Account-->
+    <string name="change_email">Change email</string>
+    <string name="change_password">Change password</string>
+    <string name="membership">Membership</string>
+    <string name="membership_message">At this time, you can check your membership or purchase on your computer at https://bcnavxe.com.</string>
+    <string name="membership_level">Your membership is [%s] and it will expire at: %s</string>
+    <string name="my_wallet">My wallet (sample)</string>
+    <string name="basic_information">Basic information</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="save">Save</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="current_email">Current email</string>
+    <string name="new_email">New email</string>
+    <string name="menu_item_unpin">Unpin</string>
+    <string name="change_password_error">There is a problems when changing the password. Please check and try again!</string>
+
+    <!--Dashboard - Map sources-->
+    <string name="pinned_map_sources">Pinned Map Sources</string>
+
+    <!--Pinned trip-->
+    <string name="pinned_trips">Pinned Trips</string>
+    <string name="msg_alert_pinned_trip">You can only choose up to 3 trips to display on quick access on dashboard.\n\nChoose the trip to replace</string>
+    <string name="title_alert_pinned_trip">Pin Trip</string>
+    <string name="msg_trip_download">Only trip on device can be pinned for quick access. Do you want to download this trip?</string>
+
+    <!--Other-->
+    <string name="loading_progress">Loading&#8230;</string>
+    <string name="please_wait">Please wait!</string>
+    <string name="please_wait_progress">Please wait&#8230;</string>
+
+    <!--Floating menu-->
+    <string name="add_new_way_point">Add new waypoint</string>
+    <string name="add_way_point">Add waypoint</string>
+    <string name="add_new_way_point_my_location">Add new waypoint (my location)</string>
+    <string name="draw">Draw</string>
+    <string name="record_a_track">Record a track</string>
+    <string name="download_map">Download map</string>
+
+    <!--Save Trip-->
+    <string name="trip_name">Trip name</string>
+    <string name="cover">Cover</string>
+    <string name="save_to_folder">Save to folder</string>
+
+    <string name="title_activity_save_trip">SaveTripActivity</string>
+    <string name="add_tags">Add tags</string>
+
+    <!--Add WayPoint fragment-->
+    <string name="name">Name</string>
+    <string name="save_to">Save to</string>
+    <string name="icon">Icon</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_pause">Pause</string>
+    <string name="track_confirm_title">Save Track</string>
+    <string name="btn_discard">DISCARD</string>
+    <string name="btn_yes">Yes</string>
+    <string name="track_message_save_record">Do you want to save your recording?</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="txt_create_new">Create new&#8230;</string>
+    <string name="btn_create">CREATE</string>
+    <string name="hint_folder_name">Folder name</string>
+    <string name="msg_error_no_trip_name">Please enter trip name.</string>
+    <string name="msg_error_no_folder">Please select a folder</string>
+    <string name="suggestion_map">Suggesting map</string>
+    <string name="favourite_map">Favorite</string>
+    <string name="downloaded_map">Downloaded</string>
+    <string name="suggestion_map_text">We suggest maps based on the current map center. You can search new map in the search box.</string>
+    <string name="topo">Topo</string>
+    <string name="marine">Marine</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="satellite">Satellite</string>
+    <string name="street">Street</string>
+    <string name="aviation">Aviation</string>
+    <string name="error_no_folder_name">Please enter folder name.</string>
+    <string name="title_create_folder">Create folder</string>
+    <string name="btn_delete">DELETE</string>
+
+    <string name="tutorial">Tutorial</string>
+    <string name="change_max_zoom">Set max zoom</string>
+    <string name="select_grid_size">Select grid size</string>
+    <string name="max_zoom_level">Max Zoom Level</string>
+    <string name="c_zoom_level">Current zoom</string>
+    <string name="search_trip">Select trip</string>
+    <string name="select_destination">Select destination</string>
+    <string name="need_login">Please login to use this feature!!!</string>
+    <string name="btn_do_login">Go Login</string>
+    <string name="saving">Saving</string>
+    <string name="saving_success">Saving successfully</string>
+    <string name="enable_gps">Please enable *GPS* Location in system settings (IE high accuracy, device only). Battery Saving won\'t work.</string>
+    <string name="edit_trip">Edit trip</string>
+    <string name="route">Trip</string>
+
+    <!--Tutorial-->
+    <string name="txt_tutorial_draw_grid">Tap squares on the grid to select area you want to download</string>
+    <string name="txt_tutorial_download">After selecting areas, tap this to Start downloading the map</string>
+    <string name="txt_tutorial_reset">Clear all your selections</string>
+    <string name="txt_tutorial_set_max_zoom">\"Set Max Zoom\" lets you choose how detailed your map will be saved. This action also increases the size of the map</string>
+    <string name="txt_tutorial_view_again">View this tutorial again</string>
+    <string name="txt_tutorial_x">Cancel Download Selection</string>
+    <string name="txt_tutorial_always_show_this">Always show this</string>
+    <string name="title_download">Download</string>
+    <string name="mgs_confirm_download">Download this trip will take up to 200mb.\n\nDo you want to download this trip?</string>
+    <string name="title_conflict">Conflict</string>
+    <string name="msg_conflict">The trip has been changed from both cloud and phone. Please choose the version you want to keep.</string>
+    <string name="msg_sync_redownload">The trip on the server is the most recent one.  Do you want to redownload it to your device?</string>
+    <string name="msg_sync_upload">The trip on your phone is the most recent one.  Do you want to upload it to the server?</string>
+    <string name="error">Error</string>
+    <string name="error_msg_download_failed">Download trip failed. Please try again</string>
+    <string name="error_msg_upload_failed">Upload to cloud failed. Please try again</string>
+
+    <!--My wallet-->
+    <string name="current_balance">Current Balance</string>
+    <string name="buy_more_coins">Buy more coins</string>
+    <string name="transactions">Transactions</string>
+    <string name="total_spend">Total Spend</string>
+    <string name="add_bookmark">Add bookmark</string>
+    <string name="added_bookmark">Added to bookmark</string>
+    <string name="add_to_another_list">Add to another list</string>
+    <string name="create_bookmark_folder">Create new list</string>
+    <string name="list_bookmark">Choose where to save bookmark</string>
+    <string name="title_activity_bcbookmark">BCBookmarkActivity</string>
+    <string name="bookmar_title">Bookmark</string>
+    <string name="delete_graphics">Delete Graphic?</string>
+    <string name="save_drawing_confirm">Do you want to save your drawing?</string>
+    <string name="msg_exit">Are you sure you wish to cancel?</string>
+    <string name="title_activity_bchelp">BCHelpActivity</string>
+    <string name="app_version">App Version</string>
+    <string name="app_version_value">1.1.6</string>
+    <string name="help_title">Help</string>
+    <string name="btn_save">Save</string>
+    <string name="cannot_edit_shared_trip">Cannot edit shared trip</string>
+    <string name="default_waypoint_name">Waypoint</string>
+    <string name="need_select_trip">You need to select a trip to save object(s) into</string>
+    <string name="title_activity_select_trip">Select Destination</string>
+    <string name="my_trips">My Trips</string>
+    <string name="txt_no_local_trips">No local trips. Please download or create new trip first.</string>
+    <string name="confirm_delete_geo">Are you sure to delete this object?</string>
+    <string name="edit_wp">Edit waypoint</string>
+    <string name="edit_geometry">Edit object</string>
+    <string name="prepare_tracking">Add track</string>
+
+    <string name="msg_saved_track_successfully">Track saved successfully.</string>
+    <string name="msg_saved_track_failed">Track saved failed.</string>
+    <string name="elevation_image_service">http://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!--FB Login-->
+    <string name="facebook_app_id">141697063186577</string>
+    <string name="fb_login_protocol_scheme">fb339718256158927</string>
+    <string name="server_client_id">159832539945-moii1tpchfoel9u9kvuo011ka57mpnag.apps.googleusercontent.com</string>
+    <string name="desc">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location">Location:</string>
+    <string name="youhavebeentraveled">You traveled for</string>
+    <string name="time">Time</string>
+    <string name="stats_settings">Stats Settings</string>
+    <string name="select">Select</string>
+    <string name="stats_select_info">Choose up to 10 items you want to display on the stats screen</string>
+    <string name="on_minimize">On minimize</string>
+    <string name="start">START</string>
+
+    <!--settings-->
+    <string name="settings_quick_access_title">Quick access</string>
+    <string name="settings_quick_access_subtitle">Choose what to show on dashboard</string>
+    <string name="settings_storage_title">Storage</string>
+    <string name="settings_power_saving_title">Power saving</string>
+    <string name="settings_map_download_title">Maps download</string>
+    <string name="settings_map_download_subtitle">Auto resume, Check D/L Integrity</string>
+    <string name="settings_map_controls_title">Map controls</string>
+    <string name="settings_map_controls_subtitle"><![CDATA[Map controls & Compass]]></string>
+    <string name="settings_appearance_title">Appearance</string>
+    <string name="settings_appearance_subtitle">Day / Night mode</string>
+    <string name="settings_unit_format_title">Unit format</string>
+    <string name="settings_backup_title">Backup</string>
+
+    <!--Settings Quick access activity-->
+    <string name="txt_desc_quick_access">Toggle buttons you want to display on dashboard</string>
+    <string name="txt_fullscreen_mode">Fullscreen mode</string>
+    <string name="txt_scale_bar">Scale bar / number</string>
+    <string name="txt_statistic">Statistics</string>
+    <string name="txt_drawing_tools">Drawing tools</string>
+    <string name="txt_map_sources">Map sources</string>
+    <string name="txt_zoom">Zoom</string>
+    <string name="change_settings_success">Change settings success</string>
+
+    <!--Settings map download-->
+    <string name="txt_syncing">SYNCING</string>
+    <string name="txt_resume_download">Enable auto resume download</string>
+    <string name="txt_integrity">D/L Integrity</string>
+    <string name="btn_check_integrity">Check D/L Integrity</string>
+    <string name="txt_last_checking_time">Your last checking was on %s</string>
+    <string name="txt_sync_photo_cellular">Sync photos on Cellular</string>
+    <string name="txt_gps_sample">GPS SAMPLE RATE</string>
+    <string name="txt_readability">READABILITY</string>
+
+    <string name="txt_night_mode">Night mode</string>
+    <string name="txt_brightness">BRIGHTNESS</string>
+    <string name="txt_theme">THEME</string>
+    <string name="txt_dark_theme">Dark theme</string>
+    <string name="txt_light_theme">Light theme</string>
+    <string name="txt_app_data">App data</string>
+    <string name="txt_app_settings">App settings</string>
+    <string name="txt_account">Account</string>
+    <string name="txt_day">Day</string>
+    <string name="txt_night">Night</string>
+    <string name="txt_auto">Auto</string>
+
+    <!--Settings - backup -->
+    <string name="txt_backup">BACKUP</string>
+    <string name="txt_auto_backup">Auto backup data</string>
+    <string name="btn_backup_now">Backup now</string>
+    <string name="txt_last_backup_time">Your last backup was on %s</string>
+    <string name="txt_backup_options">Backup options</string>
+    <string name="txt_restore">RESTORE</string>
+    <string name="txt_restore_data">RESTORE DATA</string>
+    <string name="txt_area">AREA</string>
+    <string name="txt_distance">DISTANCE</string>
+    <string name="txt_coordinates">COORDINATES</string>
+    <string name="txt_unit_hec">Hec</string>
+    <string name="txt_unit_acr">Acr</string>
+    <string name="txt_unit_miles">Miles</string>
+    <string name="txt_unit_km">Km</string>
+    <string name="txt_unit_dec">Decimal Degrees</string>
+    <string name="txt_unit_deg">Degrees and Minutes</string>
+    <string name="txt_unit_utm">UTM</string>
+    <string name="txt_unit_mgrs">MGRS</string>
+    <string name="txt_internal">Internal</string>
+    <string name="txt_sd_card">SD card</string>
+    <string name="txt_clear">Clear</string>
+    <string name="txt_rotation">ROTATION</string>
+    <string name="txt_allow_map_rotation">Allow map rotation</string>
+    <string name="txt_compass">COMPASS</string>
+    <string name="txt_compass_style_orienteering">Orienteering</string>
+    <string name="txt_grid_north">Grid North</string>
+    <string name="txt_compass_style_bearing">Bearing</string>
+    <string name="txt_unit_dms">Degree and Minutes and Second</string>
+    <string name="txt_map_arrow">Map arrow</string>
+    <string name="txt_compass_style">Compass style</string>
+    <string name="txt_magnetic_accele">Magnetic and Accelerometer</string>
+    <string name="txt_rotation_vector">Rotation Vector</string>
+    <string name="txt_magnetic_graviy">Magnetic and Gravity</string>
+    <string name="txt_orientation">Orientation</string>
+    <string name="txt_compass_sensor">Sensors for compass</string>
+    <string name="show_compass">Show compass</string>
+    <string name="second">second(s)</string>
+</resources>
